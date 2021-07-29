@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eceb24a0ec.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+    .ops::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 1;
+}
+.row1{
+  background-color: black;
+  color: white;
+}
+.hrr{
+  height: .2rem;
+  width: 3rem;
+  background-color:#18D26E;
+  position: relative;
+  border: none;
+}
+.hrr::after{
+  content: "";
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  right: 100%;
+  top: 33%;
+  background-color: lightgray;
+}
+.hrr::before{
+  content: "";
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  top: 33%;
+  background-color: lightgray;
+}
+.con{
+  width: 85% !important;
+}
+.card>h5:hover{
+  color: #18D26E;
+}
+@media screen and (min-width: 992px) {
+  
+}
+@media screen and (max-width: 576px) {
+  
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 992px) {
+  .pic {width: 23.5% !important}
+  .col-md-3point5 {width: 32% !important}
+
+  
+}
+@media screen and (min-width: 768px) and (max-width:991px) {
+  .pic {width: 47% !important}
+  .col-md-3point5 {width: 48% !important}
+  
+}
+@media screen and (max-width: 767px) {
+  .pic {width: 100% !important}
+  .col-md-3point5 {width: 100% !important}
+
+  
+}
+
+body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .pic1{
+        background-image: url(./team-1.jpg);
+      }
+      .pic2{
+        background-image: url(./team-2.jpg);
+      }
+      .pic3{
+        background-image: url(./team-3.jpg);
+      }
+      .pic4{
+        background-image: url(./team-4.jpg);
+      }
+      .pic{
+        height: 16.5rem;
+        /* width: 5rem; */
+        background-size: 100% 100%;
+        position: relative;
+        border: 1px solid;
+      }
+      .pic::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 100% 100%;
+    background-color: black;
+    opacity: 0;
+    transition-duration: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ccrd::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 100% 100%;
+    background-color: black;
+    opacity: 0;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ccrd{
+  position: relative;
+}
+.ccrd:hover::after{
+  opacity: .6;
+}
+.pic:hover::after{
+    transition: .5s;
+    opacity: .7;
+}
+.mtop{
+  position: absolute;
+  opacity: 0;
+  z-index: 44 !important;
+  top: 3rem;
+  transition: .4s;
+}
+.pic:hover .mtop{
+  transition: .4s;
+  opacity: 1;
+  top: 5rem;
+}
+.con2{
+  display: none;
+}
+.con3{
+  display: none;
+}
+.con4{
+  display: none;
+}
+.dropdown:hover .dropdown-menu
+    {
+        display:block
+    }
+    .nav-link{
+      color: white;
+    }
+  .navbar{
+    transition: 1s;
+  }
+  .icon{
+    transition: .7s;
+  }
+  .crd:hover .icon{
+    background-color: white !important;
+    color: #18D26E !important;
+  }
+  .hp>h5{
+    transition: .5s;
+  }
+  .hp>h5:hover{
+    cursor: pointer;
+  }
+  .crrd:hover .hp>h5{
+    color: #18D26E;
+  }
+  .bttn{
+    transition: .5s;
+  }
+  .bttn:hover{
+    border: .15rem solid transparent !important;
+    background-color: #18D26E;
+  }
+  .aho{
+    opacity: .5;
+    transition: .5s;
+  }
+  .aho:hover{
+    opacity: 1 !important;
+  }
+  .card-title{
+    transition: .5s;
+  }
+  .card-title:hover{
+    color: #18D26E;
+    cursor: pointer !important;
+  }
+  .btnn:hover{
+    background-color: white !important;
+    color: #18D26E;
+  }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid w-100" style="height: 41.1rem !important; width: 100%;position: relative;">
+        <div class="row w-100">
+          <nav class="navbar d-sm-flex justify-content-sm-between align-items-sm-center fixed-top navbar-expand-lg navbar-dark navv w-100" style="height: 6rem;background-color: transparent !important;">
+            <h1><a class="navbar-brand logo d-flex justify-content-between align-items-center" style="font-size: xx-large;font-weight: bolder;margin-left: 3rem;width: 10rem;" href="#"><hr style="height: 2.5rem;width: .3rem;background-color: #18D26E;">BizPage</a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="color: white !important;">
+              <ul class="navbar-nav w-100 d-flex justify-content-end font-weight-bold">
+               <li class="nav-item mr-4">
+                 <a class="nav-link" href="#">HOME</a>
+               </li>
+                <li class="nav-item mr-4">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item mr-4">
+                  <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item mr-4">
+                  <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item mr-4">
+                 <a class="nav-link" href="#">TEAM</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Dropdown
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#">Action</a>
+                   <a class="dropdown-item" href="#">Another action</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>
+                 </div>
+               </li>
+                <li class="nav-item mr-4">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  
+          </ol>
+          <div class="row h-100">
+          <div class="carousel-inner h-100 w-100">
+            <div class="carousel-item active w-100 h-100 ops">
+              <img class="d-block w-100" src="./1.jpg" style="height: 100%;width: 100%;" alt="First slide">
+              <div class="carousel-caption" style="top: 50%;transform: translateY(-50%);bottom: initial;">
+                <h1 class="font-weight-bold" style="font-size: 3rem;">We are professional</h1>
+                <p class="mt-4 mb-4" style="font-size: 1.05rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="btn btnn p-2" style="background-color: #18D26E;width: 10rem;border-radius: 10rem;transition: .4s;">Get Started</div>
+              </div>
+            </div>
+            <div class="carousel-item ops h-100">
+              <img class="d-block w-100" src="./2.jpg" style="height: 100%;width: 100%;" alt="Second slide">
+              <div class="carousel-caption" style="top: 50%;transform: translateY(-50%);bottom: initial;">
+                <h1 class="font-weight-bold" style="font-size: 3rem;">At vero eos et accusamus</h1>
+                <p class="mt-4 mb-4" style="font-size: 1.05rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="btn btnn p-2" style="background-color: #18D26E;width: 10rem;border-radius: 10rem;transition: .4s;">Get Started</div>
+              </div>
+            </div>
+            <div class="carousel-item ops h-100">
+              <img class="d-block w-100" src="./3.jpg" style="height: 100%;width: 100%;" alt="Third slide">
+              <div class="carousel-caption" style="top: 50%;transform: translateY(-50%);bottom: initial;">
+                <h1 class="font-weight-bold" style="font-size: 3rem;">Temporibus autem quibusdam</h1>
+                <p class="mt-4 mb-4" style="font-size: 1.05rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="btn btnn p-2" style="background-color: #18D26E;width: 10rem;border-radius: 10rem;transition: .4s;">Get Started</div>
+              </div>
+            </div>
+            <div class="carousel-item ops h-100">
+              <img class="d-block w-100" src="./4.jpg" style="height: 100%;width: 100%;" alt="Third slide">
+              <div class="carousel-caption" style="top: 50%;transform: translateY(-50%);bottom: initial;">
+                <h1 class="font-weight-bold" style="font-size: 3rem;">Nam libero tempore</h1>
+                <p class="mt-4 mb-4" style="font-size: 1.05rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="btn btnn p-2" style="background-color: #18D26E;width: 10rem;border-radius: 10rem;transition: .4s;">Get Started</div>
+              </div>
+            </div>
+            <div class="carousel-item ops h-100">
+              <img class="d-block w-100" src="./5.jpg" style="height: 100%;width: 100%;" alt="Third slide">
+              <div class="carousel-caption" style="top: 50%;transform: translateY(-50%);bottom: initial;">
+                <h1 class="font-weight-bold" style="font-size: 3rem;">Magnam aliquam quaerat</h1>
+                <p class="mt-4 mb-4" style="font-size: 1.05rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="btn btnn p-2" style="background-color: #18D26E;width: 10rem;border-radius: 10rem;transition: .4s;">Get Started</div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 row1 w-100">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <i class="far fa-envelope mb-3" style="font-size: 2.5rem;color: #18D26E;"></i>
+          <h3>Lorem Ipsum Delino</h3>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <i class="fab fa-battle-net mb-3" style="font-size: 2.5rem;color: #18D26E;"></i>
+          <h3>Lorem Ipsum Delino</h3>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <i class="fab fa-amazon-pay mb-3" style="font-size: 2.5rem;color: #18D26E;"></i>
+          <h3>Lorem Ipsum Delino</h3>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pb-5" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(./about-bg.jpg);background-attachment: fixed;background-size: 100% 100%;">
+      <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+        <h1 class="font-weight-bold">ABOUT US</h1>
+        <hr class="hrr">
+        <p style="font-size: large;color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="container con">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-3point5 card crd" style="margin-bottom: 1rem;">
+            <img class="card-img-top" src="./about-mission.jpg" alt="Card image cap">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+              <i class="fab fa-500px justify-content-center align-items-center d-flex rounded-circle text-light icon" style="height: 4rem;width: 4rem;margin-top: -2.9rem;margin-bottom: .4rem; font-size: 1.7rem;background-color: #18D26E;border: .3rem solid white;"></i>
+              <h5 class="card-title font-weight-bold">Our Mission</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="col-md-3point5 card crd" style="margin-bottom: 1rem;">
+            <img class="card-img-top" src="./about-plan.jpg" alt="Card image cap">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+              <i class="fas fa-bahai justify-content-center align-items-center d-flex rounded-circle text-light icon" style="height: 4rem;width: 4rem;margin-top: -2.9rem;margin-bottom: .4rem; font-size: 1.7rem;background-color: #18D26E;border: .3rem solid white;"></i>
+              <h5 class="card-title font-weight-bold">Our Plan</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="col-md-3point5 card crd" style="margin-bottom: 1rem;">
+            <img class="card-img-top" src="./about-vision.jpg" alt="Card image cap">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+              <i class="fas fa-calendar-week justify-content-center align-items-center d-flex rounded-circle text-light icon" style="height: 4rem;width: 4rem;margin-top: -2.9rem;margin-bottom: .4rem; font-size: 1.7rem;background-color: #18D26E;border: .3rem solid white;"></i>
+              <h5 class="card-title font-weight-bold">Our Vision</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pb-5" style="background-color: white;">
+      <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+        <h1 class="font-weight-bold">SERVICES</h1>
+        <hr class="hrr">
+        <p style="font-size: large;color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="container con">
+        <div class="row d-flex justify-content-between">
+          <div class="col-sm-12 col-md-6 col-lg-4 card border-0 crrd">
+            <div class="card-body d-flex flex-wrap justify-content-between">
+              <div class="icn" style="height: 100%;">
+              <i class="far fa-envelope justify-content-center align-items-center d-flex rounded-circle text-light" style="height: 4rem;margin-top: -.5rem; font-size: 2.5rem;color: #18D26E !important;"></i>
+              </div>
+              <div class="hp" style="width: 80%;">
+                <h5 class="card-title font-weight-bold">Our Mission</h5>
+              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 card border-0 crrd">
+            <div class="card-body d-flex flex-wrap justify-content-between">
+              <div class="icn" style="height: 100%;">
+              <i class="fab fa-battle-net justify-content-center align-items-center d-flex rounded-circle text-light" style="height: 4rem;margin-top: -.5rem; font-size: 2.5rem;color: #18D26E !important;"></i>
+              </div>
+              <div class="hp" style="width: 80%;">
+                <h5 class="card-title font-weight-bold">Dolor Sitema</h5>
+              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 card border-0 crrd">
+            <div class="card-body d-flex flex-wrap justify-content-between">
+              <div class="icn" style="height: 100%;">
+              <i class="fab fa-amazon justify-content-center align-items-center d-flex rounded-circle text-light" style="height: 4rem;margin-top: -.5rem; font-size: 2.5rem;color: #18D26E !important;"></i>
+              </div>
+              <div class="hp" style="width: 80%;">
+                <h5 class="card-title font-weight-bold">Sed ut perspiciatis</h5>
+              <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row d-flex justify-content-between border border-danger"> -->
+            <div class="col-sm-12 col-md-6 col-lg-4 card border-0 crrd">
+              <div class="card-body d-flex flex-wrap justify-content-between">
+                <div class="icn" style="height: 100%;">
+                <i class="fab fa-500px justify-content-center align-items-center d-flex rounded-circle text-light" style="height: 4rem;margin-top: -.5rem; font-size: 2.5rem;color: #18D26E !important;"></i>
+                </div>
+                <div class="hp" style="width: 80%;">
+                  <h5 class="card-title font-weight-bold">Magni Dolores</h5>
+                <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 card border-0 crrd">
+              <div class="card-body d-flex flex-wrap justify-content-between">
+                <div class="icn" style="height: 100%;">
+                <i class="fas fa-bahai justify-content-center align-items-center d-flex rounded-circle text-light" style="height: 4rem;margin-top: -.5rem; font-size: 2.5rem;color: #18D26E !important;"></i>
+                </div>
+                <div class="hp" style="width: 80%;">
+                  <h5 class="card-title font-weight-bold">Nemo Enim</h5>
+                <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 card border-0 crrd">
+              <div class="card-body d-flex flex-wrap justify-content-between">
+                <div class="icn" style="height: 100%;">
+                <i class="fas fa-calendar-week justify-content-center align-items-center d-flex rounded-circle text-light" style="height: 4rem;margin-top: -.5rem; font-size: 2.5rem;color: #18D26E !important;"></i>
+                </div>
+                <div class="hp" style="width: 80%;">
+                  <h5 class="card-title font-weight-bold">Eiusmod Tempor</h5>
+                <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid p-5 text-light d-flex justify-content-center align-items-center flex-wrap" style="background-image: url(./call-to-action-bg.jpg);background-attachment: fixed;">
+        <h1 class="font-weight-bold">Call To Action</h1>
+        <p class="text-center m-4" style="font-size: large;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="btn font-weight-bold bttn" style="padding: .5rem; border: .15rem solid white;border-radius: 5rem;width: 13rem;">CALL TO ACTION</div>
+      </div>
+
+      <!-- <div class="container-fluid">
+        <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+          <h1>OUR SKILLS</h1>
+          <hr class="hrr">
+          <p style="font-size: large;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div> -->
+
+      <div class="container-fluid" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(./facts-bg.jpg);background-size: 100% 100%;background-attachment: fixed;position: relative;">
+        <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+          <h1 class="font-weight-bold">FACTS</h1>
+          <hr class="hrr">
+          <p style="font-size: large;color: gray;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <img src="./facts-img.png" style="height: 100%;width: 100%;" alt="">
+        </div>
+      </div>
+
+
+      <div class="container-fluid pb-5 bg-light">
+        <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+          <h1 class="font-weight-bold">OUR PORTFOLIO</h1>
+          <hr class="hrr" style="margin-bottom: 2rem;">
+          <div class="row d-flex justify-content-between" style="width: 20rem;">
+            <div class="btn btn1" style="background-color: white;">ALL</div>
+            <div class="btn btn2" style="background-color: white;">APP</div>
+            <div class="btn btn3" style="background-color: white;">CARD</div>
+            <div class="btn btn4" style="background-color: white;">WEB</div>
+          </div>
+        </div>
+        <div class="container con con1">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-3point5 card d-flex justify-content-center align-items-center" style="margin-bottom: 1rem;">                 
+              <div class="ccrd">
+                              <!-- <i class="fas fa-link d-flex justify-content-center align-items-center" style="height: 3rem;width: 3rem;border: 1px solid red;border-radius: 3rem;position: absolute;top: 40%;left: 8.3rem;color: white;"></i> -->
+                              <!-- <i class="fas fa-plus d-flex justify-content-center align-items-center" style="height: 3rem;width: 3rem;border: 1px solid red;border-radius: 3rem;position: absolute;top: 40%;right: 8.3rem;"></i> -->
+                              <img class="card-img-top" src="./app1.jpg" alt="Card image cap">
+                              
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">App 1</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">APP</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./web3.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Web 3</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">WEB</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./app2.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">App 2</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">APP</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./card2.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Card 2</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">CARD</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./web2.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Web 2</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">WEB</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./app3.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">App 3</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">APP</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./card1.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Card 1</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">CARD</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./card3.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Card 3</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">CARD</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./web1.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Web 1</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">WEB</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="container con con2">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./app1.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">App 1</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">APP</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./app2.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">App 2</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">APP</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./app3.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">App 3</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">APP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container con con3">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./card1.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Card 1</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">CARD</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./card2.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Card 2</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">CARD</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./card3.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Card 3</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">CARD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container con con4">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./web1.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Web 1</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">WEB</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./web2.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Web 2</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">WEB</p>
+              </div>
+            </div>
+            <div class="col-md-3point5 card" style="margin-bottom: 1rem;">
+              <div class="ccrd">
+                              <img class="card-img-top" src="./web3.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title font-weight-bold">Web 3</h5>
+                <p class="font-weight-bold color-grey" style="color: gray;">WEB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="container-fluid" style="background-color: white;">
+        <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+          <h1 class="font-weight-bold">OUR CLIENTS</h1>
+          <hr class="hrr mb-5">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./client-1.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-2.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-3.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-4.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-5.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-6.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-7.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-8.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-1.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-2.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-3.png" alt="" class="aho">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-4.png" alt="" class="aho" style="opacity: .5;">
+              </div>
+              <div class="swiper-slide">
+                <img src="./client-5.png" alt="" class="aho" style="opacity: .5;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center p-1">
+          <div class="sswiper-pagination"></div>
+          </div>
+      </div>
+
+
+      <div class="container-fluid bg-light">
+        <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+          <h1 class="font-weight-bold">TESTIMONIALS</h1>
+          <hr class="hrr">
+          <div class="swiper-container mySwiperr">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide d-flex justify-content-center align-items-center flex-column bg-transparent">
+                <img src="./testimonial-1.jpg" alt="" style="height: 6.5rem;width: 6.5rem;border-radius: 50%;border: .3rem solid white;margin-bottom: .8rem;">
+                <h5 class="font-weight-bold">Saul Goodman</h5>
+                <p style="color: gray;margin-top: -.5rem;">Designer</p>
+                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia reiciendis explicabo porro distinctio error repellat corrupti eum, facilis tempora.</i></p>
+              </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center flex-column bg-transparent">
+                <img src="./testimonial-2.jpg" alt="" style="height: 6.5rem;width: 6.5rem;border-radius: 50%;border: .3rem solid white;margin-bottom: .8rem;">
+                <h5 class="font-weight-bold">Saul Goodman</h5>
+                <p style="color: gray;margin-top: -.5rem;">Designer</p>
+                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia reiciendis explicabo porro distinctio error repellat corrupti eum, facilis tempora.</i></p>
+              </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center flex-column bg-transparent">
+                <img src="./testimonial-3.jpg" alt="" style="height: 6.5rem;width: 6.5rem;border-radius: 50%;border: .3rem solid white;margin-bottom: .8rem;">
+                <h5 class="font-weight-bold">Saul Goodman</h5>
+                <p style="color: gray;margin-top: -.5rem;">Designer</p>
+                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia reiciendis explicabo porro distinctio error repellat corrupti eum, facilis tempora.</i></p>
+              </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center flex-column bg-transparent">
+                <img src="./testimonial-4.jpg" alt="" style="height: 6.5rem;width: 6.5rem;border-radius: 50%;border: .3rem solid white;margin-bottom: .8rem;">
+                <h5 class="font-weight-bold">Saul Goodman</h5>
+                <p style="color: gray;margin-top: -.5rem;">Designer</p>
+                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia reiciendis explicabo porro distinctio error repellat corrupti eum, facilis tempora.</i></p>
+              </div>
+              <div class="swiper-slide d-flex justify-content-center align-items-center flex-column bg-transparent">
+                <img src="./testimonial-5.jpg" alt="" style="height: 6.5rem;width: 6.5rem;border-radius: 50%;border: .3rem solid white;margin-bottom: .8rem;">
+                <h5 class="font-weight-bold">Saul Goodman</h5>
+                <p style="color: gray;margin-top: -.5rem;">Designer</p>
+                <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia reiciendis explicabo porro distinctio error repellat corrupti eum, facilis tempora.</i></p>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-paginationn"></div>
+          </div>
+      </div>
+      </div>
+
+
+      
+
+      <div class="container-fluid pb-5" style="background-color: white;">
+        <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+          <h1 class="font-weight-bold">TEAM</h1>
+          <hr class="hrr">
+          <p style="font-size: large;color: gray;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="container con">
+          <div class="row border d-flex justify-content-between">
+            <div class="pic1 pic text-light">
+              <div class="mtop container-fluid d-flex align-items-center flex-column">
+                <div class="row" style="font-size: large;"><h5 class="font-weight-bold">Walter White</h5></div>
+                <div class="row"><p style="font-size: small;margin-top: -.3rem;"><i>Chief Executive Officer</i></p></div>
+                <div class="row d-flex justify-content-between" style="width: 6rem;font-size: 1.3rem;">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-invision"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pic2 pic text-light">
+              <div class="mtop container-fluid d-flex align-items-center flex-column">
+                <div class="row" style="font-size: large;"><h5 class="font-weight-bold">Walter White</h5></div>
+                <div class="row"><p style="font-size: small;margin-top: -.3rem;"><i>Chief Executive Officer</i></p></div>
+                <div class="row d-flex justify-content-between" style="width: 6rem;font-size: 1.3rem;">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-invision"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pic3 pic text-light">
+              <div class="mtop container-fluid d-flex align-items-center flex-column">
+                <div class="row" style="font-size: large;"><h5 class="font-weight-bold">Walter White</h5></div>
+                <div class="row"><p style="font-size: small;margin-top: -.3rem;"><i>Chief Executive Officer</i></p></div>
+                <div class="row d-flex justify-content-between" style="width: 6rem;font-size: 1.3rem;">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-invision"></i>
+                </div>
+              </div>
+            </div>
+            <div class="pic4 pic text-light">
+              <div class="mtop container-fluid d-flex align-items-center flex-column">
+                <div class="row" style="font-size: large;"><h5 class="font-weight-bold">Walter White</h5></div>
+                <div class="row"><p style="font-size: small;margin-top: -.3rem;"><i>Chief Executive Officer</i></p></div>
+                <div class="row d-flex justify-content-between" style="width: 6rem;font-size: 1.3rem;">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-invision"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid bg-light">
+        <div class="row p-5 d-flex flex-column justify-content-center align-items-center text-center w-100">
+          <h1 class="font-weight-bold">CONTACT US</h1>
+          <hr class="hrr">
+          <p style="font-size: large;color: gray;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row w-100">
+          <div class="col col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column pb-5 text-center mx-auto">
+              <div class="input-group mb-3">
+                  <input type="text" placeholder="Full name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+              <div class="input-group mb-3">
+                  <input type="text" placeholder="Email address" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+              <div class="input-group mb-3">
+                  <input type="text" placeholder="Phone number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+              <div class="input-group">
+                  <textarea class="form-control" placeholder="Message" aria-label="With textarea"></textarea>
+              </div>
+            <button class="btn font-weight-bold p-3 mt-3" style="width: 100%;background-color: #18D26E;border-radius: 5vh;color: white;">SUBMIT</button>
+          </div>
+      </div>
+      </div>
+
+      
+
+      
+
+
+
+    
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".sswiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 50,
+            },
+          },
+        });
+
+
+        var swiper = new Swiper(".mySwiperr", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-paginationn",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+      $(".btn1").click(()=>{
+    $(`.con1`).css('display','block')
+    $(`.con2`).css('display','none')
+    $(`.con3`).css('display','none')
+    $(`.con4`).css('display','none')
+    $(this).css('background-color','#18D26E !important')
+  })
+  $(".btn2").click(()=>{
+    $(`.con1`).css('display','none')
+    $(`.con2`).css('display','block')
+    $(`.con3`).css('display','none')
+    $(`.con4`).css('display','none')
+    $(this).css('backgroundColor','#18D26E !important')
+  })
+  $(".btn3").click(()=>{
+    $(`.con1`).css('display','none')
+    $(`.con2`).css('display','none')
+    $(`.con3`).css('display','block')
+    $(`.con4`).css('display','none')
+    $(this).css('backgroundColor','#18D26E')
+  })
+  $(".btn4").click(()=>{
+    $(`.con1`).css('display','none')
+    $(`.con2`).css('display','none')
+    $(`.con3`).css('display','none')
+    $(`.con4`).css('display','block')
+    $(this).css('backgroundColor','#18D26E')
+})
+
+
+
+      var navv=document.querySelector("nav")
+      var ank=document.querySelector(".navbar-brand")
+      console.log(ank);
+      $(".nav-link").css({"color":"white"})
+      ank.style.color=`white`
+
+
+    
+      window.addEventListener("scroll",function(){
+        // console.log(scrollY,"h1");
+        if(scrollY>100){
+          console.log("done");
+          navv.style.background='black'
+          navv.style.height='4rem'
+          // ank.style.color=`black`
+          // $(".nav-link").css({"color":"black"})
+          // $(".navbar-toggler").css({"backgroundColor":"grey"})
+        }
+        else{
+          navv.style.height='6rem'
+          navv.style.backgroundColor=`transparent`
+          ank.style.color='white'
+          $(".nav-link").css({"color":"white"})
+          $(".navbar-toggler").css({"backgroundColor":"transparent"})
+        }
+        console.log(`tfygukh`);
+      })
+
+      </script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
